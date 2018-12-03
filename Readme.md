@@ -2,15 +2,15 @@
 ## Koa相关
 - Koa基本使用
 - 路由
-- 
-
+- 中间件（同步、异步async await）
+- 错误处理
 
 ## 参考
 - [vue + vuex + koa2开发环境搭建及示例开发](https://segmentfault.com/a/1190000012918518])
 
 - [koa（应该是koa2）](https://koa.bootcss.com/)
 - [Koa 框架教程 阮一峰 2017.8.9](http://www.ruanyifeng.com/blog/2017/08/koa.html)
-- 
+- [koa入门 廖雪峰](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/001471087582981d6c0ea265bf241b59a04fa6f61d767f6000)
 
 
 ## 踩坑
@@ -20,7 +20,7 @@
 
 
 
-# 创建项目
+## 创建项目
 生成package.json  
 ```
 npm init -y
