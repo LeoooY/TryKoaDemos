@@ -30,12 +30,13 @@ const router = require('./router/router')
 
 // 启用中间件
 
-app.use(router.routes()).use(router.allowedMethods());
+// app.use(router.routes()).use(router.allowedMethods());
+app.use(asyncMidware);
 app.use(logger);
-// app.use(one);
+app.use(one);
 // app.use(two);
 // app.use(three);
-// app.use(asyncMidware);
+
 
 app.listen(3000);
 console.log('server starts running');

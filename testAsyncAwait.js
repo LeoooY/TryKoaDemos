@@ -1,15 +1,8 @@
-function wait(timeout){
-    setTimeout(() => {
-        console.log(`等待了 ${timeout/1000} 秒` );
-        return "结束了 wait()";
-    }, timeout);
-}
 
-async function asyncPrint(time) {
-    let rs=await wait(time);
-    console.log(rs);
-    console.log('结束 asyncPrint()')
-    
-}
+const Koa = require('koa');
+const app = new Koa();
+const main =require('./testAsyncMiddleware.js');
 
-asyncPrint(3000);
+
+app.use(main);
+app.listen(3001);

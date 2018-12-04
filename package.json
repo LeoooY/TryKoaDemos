@@ -4,6 +4,7 @@
   "description": "使用koa2搭建一个web服务，给前端提供一个返回json数据的接口",
   "main": "index.js",
   "dependencies": {
+    "fs.promised": "^3.0.0",
     "koa": "^2.6.2",
     "koa-cors": "0.0.16",
     "koa-route": "^3.2.0",
