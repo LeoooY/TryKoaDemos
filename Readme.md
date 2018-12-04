@@ -15,7 +15,14 @@
 
 ## 踩坑
 - koa-route(阮一峰文中所用) 和 [koa-router](https://www.npmjs.com/package/koa-router)是两个不同的路由模块，用法也有些差异  
-- 
+- 洋葱模型  
+使用async和await的目的是保证koa组件的洋葱模型正常顺序（先进后出）。
+使用同步组件时候，若组件中操作全是同步操作，还不会影响正常执行顺序（先进后出）。
+但是！若是组件中出现了异步操作，则执行顺序就会被打乱了。
+所以全部使用异步组件（async 和 await写法）可以保证正常的顺序  
+[参考 ES6 async](http://es6.ruanyifeng.com/?search=import&x=0&y=0#docs/async)  
+[参考 v2ex ](https://www.v2ex.com/amp/t/441745)
+
 
 
 

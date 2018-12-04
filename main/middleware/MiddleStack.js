@@ -1,6 +1,6 @@
-const one= (ctx,next)=>{
+const one= async (ctx,next)=>{
     console.log('>>one');
-    next();
+    await next();
     console.log('<<one');
 }
 

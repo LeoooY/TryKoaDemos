@@ -31,9 +31,11 @@ const router = require('./router/router')
 // 启用中间件
 
 // app.use(router.routes()).use(router.allowedMethods());
-app.use(asyncMidware);
+
 app.use(logger);
+
 app.use(one);
+app.use(asyncMidware);
 // app.use(two);
 // app.use(three);
 
